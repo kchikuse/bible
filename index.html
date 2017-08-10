@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Knowledge Chikuse">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+		<meta name="theme-color" content="#008080">
+    	<meta name="mobile-web-app-capable" content="yes">
+    	<meta name="apple-mobile-web-app-capable" content="yes">
+		<link href="images/revelation.png" rel="icon">
+    	<link href="images/revelation.png" rel="apple-touch-icon">
+    	<!-- build:css -->
+    	<link href="main.css" rel="stylesheet">
+    	<!-- endbuild -->
+
+		<title>Bible</title>
+		
+		<!-- build:js -->
+		<script src="libs/angular.js"></script>
+		<script src="libs/angular-animate.js"></script>
+		<script src="libs/angular-sanitize.js"></script>
+		<script src="libs/angular-ui-router.js"></script>
+		<script src="libs/ionic.js"></script>
+		<script src="libs/ionic-angular.js"></script>
+		
+		<script src="bible.js"></script>
+
+		<script src="scripts/app.js"></script>
+		<script src="scripts/common/common.module.js"></script>
+		<script src="scripts/common/services/bible.service.js"></script>
+		<script src="scripts/common/services/state.service.js"></script>
+		<script src="scripts/menu/menu.module.js"></script>
+		<script src="scripts/menu/menu.controller.js"></script>
+		<script src="scripts/home/home.module.js"></script>
+		<script src="scripts/home/home.controller.js"></script>
+		<script src="scripts/chapters/chapters.module.js"></script>
+		<script src="scripts/chapters/chapters.controller.js"></script>
+		<script src="scripts/verses/verses.module.js"></script>
+		<script src="scripts/verses/verses.controller.js"></script>		
+		<script src="scripts/popover-menu/popover-view.service.js"></script>
+		<!-- endbuild -->
+	</head>
+	<body ng-app="bible">
+		<ion-nav-view></ion-nav-view>
+	</body>
+</html>

@@ -1,0 +1,11 @@
+<ion-view view-title="{{ vm.title }}">
+	<ion-content>
+		<div class="flex-container">
+	        <div class="flex-cell" 
+	        ng-repeat="chapter in vm.chapters" 
+	        ui-sref="app.verses({ book:vm.book, chapter:chapter })">
+	            <div class="flex-item">{{ chapter }}</div>
+	        </div>
+	    </div>
+	</ion-content>
+</ion-view>

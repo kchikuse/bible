@@ -1,0 +1,27 @@
+<ion-view view-title="{{ vm.name }} {{ vm.chapter }}" class="verses">
+
+	<ion-nav-buttons side="right">
+		<button class="button button-clear icon ion-ios-home-outline" ui-sref="app.home"></button>
+	</ion-nav-buttons>
+
+	<ion-content>
+		<div class="row">
+			<div class="col">
+				<verse ng-repeat="verse in vm.verses track by $index">
+					<id ng-show="vm.showNumbers">{{ $index + 1 }}</id>
+					<text ng-bind-html="vm.html(verse)"></text>
+				</verse>
+			</div>
+		</div>
+	</ion-content>
+	<ion-tabs>
+	  <a class="tab-item" ng-click="vm.showPopover($event)">
+	    <i class="icon ion-grid"></i></a>
+
+	  <a class="tab-item" ui-sref="app.verses(vm.prev)">
+	    <i class="icon ion-ios-arrow-left"></i></a>
+
+	  <a class="tab-item" ui-sref="app.verses(vm.next)">
+	    <i class="icon ion-ios-arrow-right"></i></a>
+	</ion-tabs>
+</ion-view>

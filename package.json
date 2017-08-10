@@ -1,0 +1,21 @@
+{
+  "name": "bible",
+  "version": "0.0.1",
+  "description": "The Messianic Bible",
+  "author": "kchikuse@gmail.com",
+  "dependencies": {
+    "babel-core": "latest",
+    "babel-preset-es2015": "latest",
+    "gulp": "latest",
+    "gulp-babel": "latest",
+    "gulp-clean-css": "latest",
+    "gulp-concat": "latest",
+    "gulp-copy": "latest",
+    "gulp-html-replace": "latest",
+    "gulp-rename": "latest",
+    "gulp-uglify": "latest",
+    "add-stream": "latest",
+    "gulp-htmlmin": "latest",
+    "gulp-angular-templatecache": "latest"
+  }
+}
