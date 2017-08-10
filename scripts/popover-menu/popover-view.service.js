@@ -5,8 +5,6 @@
 		.module('barebone.common')
 		.factory('popoverViewService', popoverViewService);
 
-	popoverViewService.$inject = ['$rootScope', '$ionicPopover', '$q'];
-
 	function popoverViewService($rootScope, $ionicPopover, $q) {
 		let scope = $rootScope.$new();
 		

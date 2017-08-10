@@ -1,6 +1,11 @@
 CACHE MANIFEST
 index.html
-js/app.js
-css/style.css
-images/bible.png
-fonts/
+app.min.js
+app.min.css
+images/bg.png
+images/revelation.png
+fonts/ionicons.eot
+fonts/ionicons.ttf
+fonts/ionicons.woff
+fonts/SILEOT.woff
+LICENSE.txt

@@ -5,8 +5,6 @@
 		.module('barebone.chapters')
 		.controller('VersesController', VersesController);
 
-	VersesController.$inject = ['bible', 'state', '$state', '$stateParams', '$sce', 'popoverViewService'];
-
 	function VersesController(bible, state, $state, $stateParams, $sce, popoverViewService) {
 		let book = parseInt($stateParams.book);
 		let chapter = parseInt($stateParams.chapter);

@@ -16,6 +16,7 @@
     "gulp-uglify": "latest",
     "add-stream": "latest",
     "gulp-htmlmin": "latest",
+    "gulp-ng-annotate": "latest",
     "gulp-angular-templatecache": "latest"
   }
 }

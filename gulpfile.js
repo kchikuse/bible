@@ -8,6 +8,7 @@ var gulpCopy = require('gulp-copy');
 var addStream = require('add-stream');
 var htmlreplace = require('gulp-html-replace');
 var htmlmin = require('gulp-htmlmin');
+var annotate = require('gulp-ng-annotate');
 var templateCache = require('gulp-angular-templatecache');
 
 var DIST_FOLDER = 'dist/';
@@ -35,11 +36,12 @@ gulp.task('js', function() {
             'scripts/verses/verses.controller.js',     
             'scripts/popover-menu/popover-view.service.js'
         ])
-        .pipe(babel({ presets: ['es2015'] }))
+        .pipe(babel({ presets: ['es2015'], compact: true }))
         .pipe(addStream.obj(prepareTemplates()))
         .pipe(concat('app.min.js'))
+        .pipe(annotate())
         .pipe(gulp.dest(DIST_FOLDER))
-        //.pipe(uglify().on('error', console.log))
+        .pipe(uglify().on('error', console.log))
         .pipe(gulp.dest(DIST_FOLDER))
 });
 

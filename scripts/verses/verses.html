@@ -8,7 +8,7 @@
 		<div class="row">
 			<div class="col">
 				<verse ng-repeat="verse in vm.verses track by $index">
-					<id ng-show="vm.showNumbers">{{ $index + 1 }}</id>
+					<id ng-show="vm.showNumbers">{{ $index + 1 }}</id>&nbsp;
 					<text ng-bind-html="vm.html(verse)"></text>
 				</verse>
 			</div>

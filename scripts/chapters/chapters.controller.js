@@ -5,8 +5,6 @@
 		.module('barebone.chapters')
 		.controller('ChaptersController', ChaptersController);
 
-	ChaptersController.$inject = ['bible', '$stateParams'];
-
 	function ChaptersController(bible, $stateParams) {
 		let book = $stateParams.book;
 		let vm = angular.extend(this, {
